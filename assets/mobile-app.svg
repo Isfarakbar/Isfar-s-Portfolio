@@ -1,0 +1,86 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mobileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff7b7b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#mobileBg)"/>
+  
+  <!-- Phone Frame -->
+  <rect x="200" y="50" width="200" height="300" rx="25" fill="url(#phoneBg)"/>
+  <rect x="210" y="80" width="180" height="240" rx="15" fill="url(#screenBg)"/>
+  
+  <!-- Status Bar -->
+  <rect x="210" y="80" width="180" height="20" fill="#2c3e50"/>
+  <text x="220" y="92" font-family="Arial, sans-serif" font-size="8" fill="white">9:41 AM</text>
+  <text x="360" y="92" font-family="Arial, sans-serif" font-size="8" fill="white">100%</text>
+  <rect x="370" y="87" width="15" height="6" rx="1" fill="#27ae60"/>
+  
+  <!-- App Header -->
+  <rect x="210" y="100" width="180" height="40" fill="#3498db"/>
+  <text x="280" y="120" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold" text-anchor="middle">FitTracker</text>
+  <circle cx="230" cy="120" r="8" fill="rgba(255,255,255,0.3)"/>
+  <text x="227" y="124" font-family="Arial, sans-serif" font-size="8" fill="white">☰</text>
+  
+  <!-- Main Dashboard -->
+  <circle cx="300" cy="180" r="40" fill="none" stroke="#e74c3c" stroke-width="6"/>
+  <circle cx="300" cy="180" r="40" fill="none" stroke="#27ae60" stroke-width="6" stroke-dasharray="150 100" transform="rotate(-90 300 180)"/>
+  <text x="300" y="175" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="bold">8,547</text>
+  <text x="300" y="185" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d" text-anchor="middle">steps</text>
+  
+  <!-- Stats Cards -->
+  <rect x="220" y="240" width="50" height="30" rx="5" fill="#e8f4fd"/>
+  <text x="245" y="250" font-family="Arial, sans-serif" font-size="8" fill="#3498db" text-anchor="middle">🔥</text>
+  <text x="245" y="260" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50" text-anchor="middle">245 cal</text>
+  <text x="245" y="268" font-family="Arial, sans-serif" font-size="6" fill="#7f8c8d" text-anchor="middle">burned</text>
+  
+  <rect x="280" y="240" width="50" height="30" rx="5" fill="#fef9e7"/>
+  <text x="305" y="250" font-family="Arial, sans-serif" font-size="8" fill="#f39c12" text-anchor="middle">⏱️</text>
+  <text x="305" y="260" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50" text-anchor="middle">45 min</text>
+  <text x="305" y="268" font-family="Arial, sans-serif" font-size="6" fill="#7f8c8d" text-anchor="middle">active</text>
+  
+  <rect x="340" y="240" width="40" height="30" rx="5" fill="#eafaf1"/>
+  <text x="360" y="250" font-family="Arial, sans-serif" font-size="8" fill="#27ae60" text-anchor="middle">💧</text>
+  <text x="360" y="260" font-family="Arial, sans-serif" font-size="7" fill="#2c3e50" text-anchor="middle">1.2L</text>
+  <text x="360" y="268" font-family="Arial, sans-serif" font-size="6" fill="#7f8c8d" text-anchor="middle">water</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="210" y="290" width="180" height="30" fill="#ecf0f1"/>
+  <circle cx="240" cy="305" r="8" fill="#3498db"/>
+  <text x="237" y="308" font-family="Arial, sans-serif" font-size="8" fill="white">📊</text>
+  
+  <circle cx="270" cy="305" r="8" fill="#bdc3c7"/>
+  <text x="267" y="308" font-family="Arial, sans-serif" font-size="8" fill="white">🏃</text>
+  
+  <circle cx="300" cy="305" r="8" fill="#bdc3c7"/>
+  <text x="297" y="308" font-family="Arial, sans-serif" font-size="8" fill="white">🍎</text>
+  
+  <circle cx="330" cy="305" r="8" fill="#bdc3c7"/>
+  <text x="327" y="308" font-family="Arial, sans-serif" font-size="8" fill="white">⚙️</text>
+  
+  <circle cx="360" cy="305" r="8" fill="#bdc3c7"/>
+  <text x="357" y="308" font-family="Arial, sans-serif" font-size="8" fill="white">👤</text>
+  
+  <!-- Home Button -->
+  <circle cx="300" cy="340" r="8" fill="#34495e"/>
+  
+  <!-- Side Elements -->
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Fitness</text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Tracker</text>
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">Mobile App</text>
+  
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">React</text>
+  <text x="450" y="170" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Native</text>
+  <text x="450" y="190" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">iOS & Android</text>
+</svg>

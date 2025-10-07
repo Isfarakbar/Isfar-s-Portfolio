@@ -1,0 +1,115 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="portfolioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="websiteBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#portfolioBg)"/>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="40" width="500" height="320" rx="10" fill="#2c3e50"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="40" width="500" height="35" rx="10" fill="#34495e"/>
+  <circle cx="70" cy="57" r="5" fill="#e74c3c"/>
+  <circle cx="85" cy="57" r="5" fill="#f39c12"/>
+  <circle cx="100" cy="57" r="5" fill="#27ae60"/>
+  
+  <!-- Address Bar -->
+  <rect x="130" y="50" width="280" height="18" rx="9" fill="#ecf0f1"/>
+  <text x="140" y="61" font-family="Arial, sans-serif" font-size="9" fill="#7f8c8d">www.john-portfolio.com</text>
+  
+  <!-- Website Content -->
+  <rect x="60" y="85" width="480" height="265" fill="url(#websiteBg)"/>
+  
+  <!-- Navigation Header -->
+  <rect x="60" y="85" width="480" height="40" fill="rgba(52, 152, 219, 0.1)"/>
+  <text x="80" y="105" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50" font-weight="bold">John Doe</text>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Home</text>
+  <text x="480" y="100" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">About</text>
+  <text x="510" y="100" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Work</text>
+  <text x="450" y="110" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Skills</text>
+  <text x="480" y="110" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Contact</text>
+  
+  <!-- Hero Section -->
+  <rect x="70" y="135" width="220" height="100" fill="rgba(255, 255, 255, 0.8)"/>
+  <text x="80" y="155" font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" font-weight="bold">Hi, I'm John Doe</text>
+  <text x="80" y="170" font-family="Arial, sans-serif" font-size="11" fill="#3498db">Full Stack Developer</text>
+  <text x="80" y="185" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">I create amazing web experiences</text>
+  <text x="80" y="195" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">with modern technologies.</text>
+  
+  <!-- CTA Buttons -->
+  <rect x="80" y="210" width="60" height="18" rx="9" fill="#3498db"/>
+  <text x="110" y="221" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">View Work</text>
+  
+  <rect x="150" y="210" width="60" height="18" rx="9" fill="transparent" stroke="#3498db" stroke-width="1"/>
+  <text x="180" y="221" font-family="Arial, sans-serif" font-size="8" fill="#3498db" text-anchor="middle">Contact Me</text>
+  
+  <!-- Profile Image Placeholder -->
+  <circle cx="400" cy="185" r="40" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="20" fill="#7f8c8d" text-anchor="middle">👨‍💻</text>
+  
+  <!-- Skills Section -->
+  <rect x="70" y="250" width="140" height="80" fill="rgba(255, 255, 255, 0.9)"/>
+  <text x="80" y="265" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="bold">Skills</text>
+  
+  <!-- Skill Bars -->
+  <rect x="80" y="275" width="100" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="80" y="275" width="80" height="8" rx="4" fill="#3498db"/>
+  <text x="185" y="281" font-family="Arial, sans-serif" font-size="7" fill="#7f8c8d">JavaScript</text>
+  
+  <rect x="80" y="290" width="100" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="80" y="290" width="70" height="8" rx="4" fill="#e74c3c"/>
+  <text x="185" y="296" font-family="Arial, sans-serif" font-size="7" fill="#7f8c8d">React</text>
+  
+  <rect x="80" y="305" width="100" height="8" rx="4" fill="#ecf0f1"/>
+  <rect x="80" y="305" width="85" height="8" rx="4" fill="#27ae60"/>
+  <text x="185" y="311" font-family="Arial, sans-serif" font-size="7" fill="#7f8c8d">Node.js</text>
+  
+  <!-- Projects Section -->
+  <rect x="220" y="250" width="140" height="80" fill="rgba(255, 255, 255, 0.9)"/>
+  <text x="230" y="265" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="bold">Recent Projects</text>
+  
+  <!-- Project Cards -->
+  <rect x="230" y="275" width="40" height="25" rx="3" fill="#e8f4fd"/>
+  <text x="250" y="285" font-family="Arial, sans-serif" font-size="6" fill="#3498db" text-anchor="middle">E-Shop</text>
+  <text x="250" y="293" font-family="Arial, sans-serif" font-size="5" fill="#7f8c8d" text-anchor="middle">React</text>
+  
+  <rect x="280" y="275" width="40" height="25" rx="3" fill="#fef9e7"/>
+  <text x="300" y="285" font-family="Arial, sans-serif" font-size="6" fill="#f39c12" text-anchor="middle">Dashboard</text>
+  <text x="300" y="293" font-family="Arial, sans-serif" font-size="5" fill="#7f8c8d" text-anchor="middle">Vue.js</text>
+  
+  <rect x="230" y="305" width="40" height="25" rx="3" fill="#eafaf1"/>
+  <text x="250" y="315" font-family="Arial, sans-serif" font-size="6" fill="#27ae60" text-anchor="middle">API</text>
+  <text x="250" y="323" font-family="Arial, sans-serif" font-size="5" fill="#7f8c8d" text-anchor="middle">Node.js</text>
+  
+  <rect x="280" y="305" width="40" height="25" rx="3" fill="#fdedec"/>
+  <text x="300" y="315" font-family="Arial, sans-serif" font-size="6" fill="#e74c3c" text-anchor="middle">Mobile</text>
+  <text x="300" y="323" font-family="Arial, sans-serif" font-size="5" fill="#7f8c8d" text-anchor="middle">React Native</text>
+  
+  <!-- Contact Section -->
+  <rect x="370" y="250" width="140" height="80" fill="rgba(255, 255, 255, 0.9)"/>
+  <text x="380" y="265" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="bold">Get In Touch</text>
+  
+  <!-- Contact Info -->
+  <text x="380" y="280" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">📧 john@example.com</text>
+  <text x="380" y="295" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">📱 +1 (555) 123-4567</text>
+  <text x="380" y="310" font-family="Arial, sans-serif" font-size="8" fill="#7f8c8d">📍 New York, USA</text>
+  
+  <!-- Social Icons -->
+  <circle cx="390" cy="320" r="6" fill="#3498db"/>
+  <text x="387" y="323" font-family="Arial, sans-serif" font-size="6" fill="white">in</text>
+  
+  <circle cx="410" cy="320" r="6" fill="#333"/>
+  <text x="407" y="323" font-family="Arial, sans-serif" font-size="6" fill="white">gh</text>
+  
+  <circle cx="430" cy="320" r="6" fill="#1da1f2"/>
+  <text x="427" y="323" font-family="Arial, sans-serif" font-size="6" fill="white">tw</text>
+</svg>

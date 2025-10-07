@@ -1,0 +1,71 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg)"/>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="50" width="500" height="300" rx="10" fill="#2c3e50"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="50" width="500" height="40" rx="10" fill="#34495e"/>
+  <circle cx="70" cy="70" r="6" fill="#e74c3c"/>
+  <circle cx="90" cy="70" r="6" fill="#f39c12"/>
+  <circle cx="110" cy="70" r="6" fill="#27ae60"/>
+  
+  <!-- Address Bar -->
+  <rect x="140" y="60" width="300" height="20" rx="10" fill="#ecf0f1"/>
+  <text x="150" y="73" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d">www.ecommerce-store.com</text>
+  
+  <!-- Main Content Area -->
+  <rect x="70" y="110" width="460" height="220" fill="url(#cardGrad)"/>
+  
+  <!-- Header -->
+  <rect x="80" y="120" width="440" height="40" fill="#3498db"/>
+  <text x="90" y="140" font-family="Arial, sans-serif" font-size="14" fill="white" font-weight="bold">ShopMart</text>
+  <rect x="450" y="130" width="60" height="20" rx="3" fill="#2980b9"/>
+  <text x="465" y="142" font-family="Arial, sans-serif" font-size="8" fill="white">Cart (3)</text>
+  
+  <!-- Navigation -->
+  <rect x="80" y="170" width="440" height="25" fill="#ecf0f1"/>
+  <text x="90" y="185" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Home</text>
+  <text x="130" y="185" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Products</text>
+  <text x="180" y="185" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">Categories</text>
+  <text x="240" y="185" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50">About</text>
+  
+  <!-- Product Grid -->
+  <rect x="90" y="210" width="100" height="80" rx="5" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <rect x="95" y="215" width="90" height="50" fill="#e8f4fd"/>
+  <text x="100" y="230" font-family="Arial, sans-serif" font-size="8" fill="#3498db">📱</text>
+  <text x="95" y="275" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Smartphone</text>
+  <text x="95" y="285" font-family="Arial, sans-serif" font-size="8" fill="#e74c3c" font-weight="bold">$599</text>
+  
+  <rect x="210" y="210" width="100" height="80" rx="5" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <rect x="215" y="215" width="90" height="50" fill="#fef9e7"/>
+  <text x="220" y="230" font-family="Arial, sans-serif" font-size="8" fill="#f39c12">💻</text>
+  <text x="215" y="275" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Laptop</text>
+  <text x="215" y="285" font-family="Arial, sans-serif" font-size="8" fill="#e74c3c" font-weight="bold">$999</text>
+  
+  <rect x="330" y="210" width="100" height="80" rx="5" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <rect x="335" y="215" width="90" height="50" fill="#eafaf1"/>
+  <text x="340" y="230" font-family="Arial, sans-serif" font-size="8" fill="#27ae60">🎧</text>
+  <text x="335" y="275" font-family="Arial, sans-serif" font-size="8" fill="#2c3e50">Headphones</text>
+  <text x="335" y="285" font-family="Arial, sans-serif" font-size="8" fill="#e74c3c" font-weight="bold">$199</text>
+  
+  <!-- Shopping Cart Icon -->
+  <circle cx="480" cy="250" r="15" fill="#e74c3c"/>
+  <text x="475" y="255" font-family="Arial, sans-serif" font-size="12" fill="white">🛒</text>
+  
+  <!-- Footer -->
+  <rect x="80" y="310" width="440" height="15" fill="#34495e"/>
+  <text x="90" y="320" font-family="Arial, sans-serif" font-size="8" fill="white">© 2024 ShopMart - Your Online Shopping Destination</text>
+</svg>
