@@ -66,11 +66,15 @@
 }
 
 .category-title {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.75rem; /* increased from 1.5rem */
+    font-weight: 800;
     color: #ffffff;
     margin: 0;
-    text-shadow: 0 2px 10px rgba(168, 85, 247, 0.2);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(90deg, #a78bfa, #22d3ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skills-list {

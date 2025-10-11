@@ -82,15 +82,26 @@ Follow Step 3 from Method 1 above.
 
 ---
 
-## Method 3: Custom Domain (Optional)
+## Method 3: Custom Domain (Optional - Requires Purchased Domain)
 
-If you want to use your own domain (e.g., `yourname.com`):
+⚠️ **IMPORTANT**: Custom domains must be properly formatted and purchased from a domain registrar.
+
+**❌ Invalid formats:**
+- `isfarportfolio` (missing domain extension)
+- `portfolio` (not a valid domain)
+- `mysite` (incomplete domain)
+
+**✅ Valid formats:**
+- `isfarportfolio.com`
+- `isfar-portfolio.org`
+- `yourname.dev`
 
 ### Step 1: Purchase Domain
-- Buy domain from registrar (Namecheap, GoDaddy, etc.)
+- Buy a **real domain** from registrar (Namecheap, GoDaddy, etc.)
+- Examples: `yourname.com`, `yourportfolio.dev`, `isfar.io`
 
 ### Step 2: Configure DNS
-Add these DNS records:
+Add these DNS records in your domain registrar's control panel:
 ```
 Type: A
 Name: @
@@ -115,8 +126,15 @@ Value: YOUR-USERNAME.github.io
 
 ### Step 3: Add Custom Domain
 1. In repository settings → Pages
-2. Add your domain in "Custom domain" field
+2. Add your **purchased domain** in "Custom domain" field
 3. Enable "Enforce HTTPS"
+
+### Alternative: Use GitHub Pages Default URL (Free)
+If you don't want to purchase a domain, your portfolio will be available at:
+```
+https://YOUR-USERNAME.github.io/portfolio
+```
+This is completely free and professional!
 
 ---
 
@@ -145,6 +163,13 @@ Value: YOUR-USERNAME.github.io
 ## 🔧 Troubleshooting
 
 ### Common Issues & Solutions
+
+**Issue: Custom domain error - "not properly formatted"**
+- ❌ **Problem**: Using invalid domain format like `isfarportfolio`
+- ✅ **Solution**: Use proper domain format with extension:
+  - `isfarportfolio.com` (must purchase from registrar)
+  - `yourname.dev` (must purchase from registrar)
+  - OR use free GitHub Pages URL: `https://YOUR-USERNAME.github.io/portfolio`
 
 **Issue: Site shows 404 error**
 - ✅ Ensure `index.html` is in the root directory

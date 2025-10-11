@@ -91,7 +91,7 @@ python -m SimpleHTTPServer 8000
 #### Using Node.js
 ```bash
 # Install live-server globally
-npm install -g live-server
+Use the VS Code "Live Server" extension to preview locally.
 
 # Navigate to project directory and run
 cd Portfolio

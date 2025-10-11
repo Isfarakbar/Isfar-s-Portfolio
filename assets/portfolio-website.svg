@@ -84,7 +84,7 @@
   
   <rect x="280" y="275" width="40" height="25" rx="3" fill="#fef9e7"/>
   <text x="300" y="285" font-family="Arial, sans-serif" font-size="6" fill="#f39c12" text-anchor="middle">Dashboard</text>
-  <text x="300" y="293" font-family="Arial, sans-serif" font-size="5" fill="#7f8c8d" text-anchor="middle">Vue.js</text>
+  
   
   <rect x="230" y="305" width="40" height="25" rx="3" fill="#eafaf1"/>
   <text x="250" y="315" font-family="Arial, sans-serif" font-size="6" fill="#27ae60" text-anchor="middle">API</text>
