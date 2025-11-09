@@ -826,12 +826,6 @@ nav {
     margin-bottom: 25px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
 .form-group input,
 .form-group textarea {
     width: 100%;
