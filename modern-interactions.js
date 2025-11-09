@@ -1,5 +1,32 @@
 // Modern Interactive Elements for Frontend Developer Portfolio
 
+// Hero Content Fade-in Animation
+function initHeroAnimations() {
+    const heroElements = [
+        '.hero-badge',
+        '.hero-title',
+        '.hero-subtitle',
+        '.hero-description',
+        '.hero-stats',
+        '.hero-buttons',
+        '.tech-stack'
+    ];
+    
+    heroElements.forEach((selector, index) => {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            
+            setTimeout(() => {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }, index * 200);
+        }
+    });
+}
+
 // Floating Elements Animation
 function initFloatingElements() {
     const floatingShapes = document.querySelectorAll('.floating-shape');
@@ -18,8 +45,8 @@ function initFloatingElements() {
 }
 
 function animateFloating(element, index) {
-    const duration = 3000 + (index * 1000); // Different speeds
-    const amplitude = 50 + (index * 20);
+    const duration = 4000 + (index * 1500); // Different speeds
+    const amplitude = 30 + (index * 15);
     
     function float() {
         const currentX = parseFloat(element.style.left);
@@ -136,27 +163,73 @@ function initCursorEffects() {
     });
 }
 
-// Tech Stack Icon Animations
+// Tech Stack Icon Animations - Improved with subtle animations
 function initTechStackAnimations() {
     const techIcons = document.querySelectorAll('.tech-icon');
     
     techIcons.forEach((icon, index) => {
-        // Hover animation
+        // Gentle hover animation
         icon.addEventListener('mouseenter', () => {
-            icon.style.transform = 'scale(1.2) rotate(5deg)';
+            icon.style.transform = 'scale(1.15) translateY(-3px)';
+            icon.style.boxShadow = '0 8px 25px rgba(255, 255, 255, 0.15)';
         });
         
         icon.addEventListener('mouseleave', () => {
-            icon.style.transform = 'scale(1) rotate(0deg)';
+            icon.style.transform = 'scale(1) translateY(0)';
+            icon.style.boxShadow = 'none';
         });
         
-        // Periodic pulse animation
+        // Gentle periodic animation
         setTimeout(() => {
-            icon.classList.add('pulse');
+            icon.style.transform = 'scale(1.05) translateY(-2px)';
+            icon.style.transition = 'all 0.3s ease';
+            
             setTimeout(() => {
-                icon.classList.remove('pulse');
-            }, 1000);
-        }, index * 500);
+                icon.style.transform = 'scale(1) translateY(0)';
+            }, 300);
+        }, index * 800);
+    });
+}
+
+// Staggered Hero Stats and Buttons Animation
+function initHeroStaggeredAnimations() {
+    // Animate stat items with stagger
+    const statItems = document.querySelectorAll('.stat-item');
+    statItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px) scale(0.9)';
+        item.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0) scale(1)';
+        }, 600 + (index * 150));
+    });
+    
+    // Animate buttons with stagger
+    const heroButtons = document.querySelectorAll('.hero-buttons .btn');
+    heroButtons.forEach((button, index) => {
+        button.style.opacity = '0';
+        button.style.transform = 'translateY(30px)';
+        button.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        setTimeout(() => {
+            button.style.opacity = '1';
+            button.style.transform = 'translateY(0)';
+        }, 1000 + (index * 200));
+    });
+    
+    // Add subtle hover effects to buttons
+    heroButtons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            button.style.transform = 'translateY(-2px) scale(1.02)';
+            button.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)';
+        });
+        
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = 'translateY(0) scale(1)';
+            button.style.boxShadow = 'none';
+        });
     });
 }
 
@@ -231,6 +304,8 @@ function initPageTransitions() {
 
 // Initialize all modern interactions
 document.addEventListener('DOMContentLoaded', () => {
+    initHeroAnimations();
+    initHeroStaggeredAnimations();
     initTechStackAnimations();
     initCodeTypingEffect();
     initPageTransitions();
@@ -246,3 +321,6 @@ window.initFloatingElements = initFloatingElements;
 window.initScrollAnimations = initScrollAnimations;
 window.initParallaxEffects = initParallaxEffects;
 window.initCursorEffects = initCursorEffects;
+window.initHeroAnimations = initHeroAnimations;
+window.initHeroStaggeredAnimations = initHeroStaggeredAnimations;
+window.initTechStackAnimations = initTechStackAnimations;
