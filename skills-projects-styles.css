@@ -17,23 +17,25 @@
     gap: 40px;
     margin-bottom: 60px;
     justify-items: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
 
 .skill-category {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--border-radius-lg);
-    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 45px;
     backdrop-filter: blur(20px);
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .skill-category::before {
@@ -47,10 +49,10 @@
 }
 
 .skill-category:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-10px);
-    box-shadow: var(--box-shadow-lg);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(167, 139, 250, 0.25);
 }
 
 .category-header {
@@ -61,27 +63,30 @@
 }
 
 .category-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--gradient-primary);
-    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #a78bfa, #22d3ee, #f472b6);
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
+    box-shadow: 0 10px 30px rgba(167, 139, 250, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .category-title {
-    font-size: 1.75rem; /* increased from 1.5rem */
+    font-size: 2rem;
     font-weight: 800;
     color: #ffffff;
     margin: 0;
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
-    background: linear-gradient(90deg, #a78bfa, #22d3ee);
+    background: linear-gradient(90deg, #a78bfa, #22d3ee, #f472b6);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
 }
 
 .skills-list {
@@ -650,5 +655,9 @@
 @media (min-width: 992px) {
   .project-categories {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
 }
