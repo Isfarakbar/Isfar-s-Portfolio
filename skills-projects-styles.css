@@ -16,6 +16,10 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     margin-bottom: 60px;
+    justify-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skill-category {
@@ -27,6 +31,9 @@
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .skill-category::before {
