@@ -440,10 +440,10 @@
 }
 
 .intro-stats {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: stretch;
 }
 
 .intro-visual {
@@ -496,7 +496,7 @@
     box-shadow: 0 30px 60px rgba(167, 139, 250, 0.25);
 }
 
-.category-icon {
+.category-card .category-icon {
     width: 90px;
     height: 90px;
     background: linear-gradient(135deg, #8b5cf6, #06b6d4, #ec4899);
@@ -616,7 +616,7 @@
     }
     
     .intro-stats {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 20px;
     }
     
@@ -659,5 +659,16 @@
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+  }
+  .intro-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .intro-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
